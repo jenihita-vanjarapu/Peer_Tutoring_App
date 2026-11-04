@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/student_popup_rounded_bg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ELA_StudentFrame\nPlease select what classes you struggle with:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <CheckBox android:id="@+id/cb_eng1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English 1"/>
+        <CheckBox android:id="@+id/cb_ap_sem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Seminar"/>
+        <CheckBox android:id="@+id/cb_eng2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English 2"/>
+        <CheckBox android:id="@+id/cb_ap_lang" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Lang"/>
+        <CheckBox android:id="@+id/cb_eng3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English 3"/>
+        <CheckBox android:id="@+id/cb_ap_lit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Lit"/>
+        <CheckBox android:id="@+id/cb_eng4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="English 4"/>
+        <CheckBox android:id="@+id/cb_creative" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Creative Writing"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnSaveEla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save ELA"
+        android:backgroundTint="#8A5A5A"/>
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/student_popup_rounded_bg"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:elevation="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Science_StudentFrame\nPlease select what classes you struggle with:"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <CheckBox android:id="@+id/cb_biology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Biology" />
+        <CheckBox android:id="@+id/cb_ap_physics2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Physics 2" />
+        <CheckBox android:id="@+id/cb_chemistry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Chemistry" />
+        <CheckBox android:id="@+id/cb_ap_physicsc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Physics C" />
+        <CheckBox android:id="@+id/cb_physics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Physics" />
+        <CheckBox android:id="@+id/cb_ap_chemistry" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Chemistry" />
+        <CheckBox android:id="@+id/cb_ap_physics1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Physics 1" />
+        <CheckBox android:id="@+id/cb_ap_biology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Biology" />
+        <CheckBox android:id="@+id/cb_ap_research" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Research" />
+        <CheckBox android:id="@+id/cb_ap_seminar_sci" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Seminar" />
+        <CheckBox android:id="@+id/cb_ap_psychology" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AP Psychology" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnSaveScience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Science"
+        android:backgroundTint="#8A5A5A"/>
+</LinearLayout>

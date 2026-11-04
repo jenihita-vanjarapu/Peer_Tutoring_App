@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_rounded_bg"
+    android:elevation="8dp"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="Please select what classes you want to teach"
+        android:textColor="#333333"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <CheckBox
+            android:id="@+id/cb_algebra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Algebra" />
+
+        <CheckBox
+            android:id="@+id/cb_calculus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculus" />
+
+        <CheckBox
+            android:id="@+id/cb_geometry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Geometry" />
+
+        <CheckBox
+            android:id="@+id/cb_ap_calc_ab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AP Calculus AB" />
+
+        <CheckBox
+            android:id="@+id/cb_algebra2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Algebra 2" />
+
+        <CheckBox
+            android:id="@+id/cb_ap_calc_bc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AP Calculus BC" />
+
+        <CheckBox
+            android:id="@+id/cb_ap_precalc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="AP Precalculus" />
+
+        <CheckBox
+            android:id="@+id/cb_business_math"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business Math" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btnSaveMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#243E56"
+        android:text="Save Math" />
+</LinearLayout>
